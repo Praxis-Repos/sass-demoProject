@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -62,7 +62,7 @@ select {
   html:focus-within {
    scroll-behavior: auto;
   }
-
+  
   *,
   *::before,
   *::after {
@@ -73,27 +73,3 @@ select {
   }
 }
 */
-body {
-  background-color: black;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-}
-.main__paragraph {
-  color: blue;
-}
-.main .main__paragraph {
-  font-weight: 400;
-  color: yellow;
-}
-.main .main__paragraph:hover {
-  color: blue;
-}
-
-/*# sourceMappingURL=/main.77bb5cfd.css.map */

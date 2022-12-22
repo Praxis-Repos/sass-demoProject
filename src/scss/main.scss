@@ -1,5 +1,32 @@
-$color-1: black;
+@import './reset';
+@import './variables';
+@import './functions';
+@import './mixins';
+
 
 body {
   background-color: $color-1;
+}
+
+.main {
+  @include flexCenter(column);
+  width: 80%;
+  margin: 0 auto;
+
+  &__paragraph {
+  color:blue;
+  }
+
+  #{&}__paragraph {    //#{&} = .main .main__paragraph//
+    font-weight: weight(regular);
+    color: yellow;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+.light {
+  @include theme($light-theme: false);
 }
